@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Football Table</title>
 </head>
 
 <body>
     <div>
-        <table align="center" border="1">
+        <table border="1" align="center">
             <thead>
-                <caption>Max Scores by Different Players (Goals Scored)</caption>
-
-                <tr>
-                    <th>Serial No.</th>
-                    <th>Player Name</th>
-                    <th>Max Score</th>
-                    <th>Game</th>
-                </tr>
-
+                <caption>Scores of Attackers in the last 3 games</caption>
+                <th>Name</th>
+                <th>Match</th>
+                <th>Goals Scored</th>
             </thead>
-
             <tbody>
-
                 <tr>
-                    <td>1000</td>
-                    <td>Ronaldo</td>
-                    <td>6</td>
-                    <td>Barcelona VS Real Madrid</td>
+                    <td rowspan="3">Harry Wayne</td>
+                    <td>Arsenal</td>
+                    <td>1</td>
                 </tr>
-
                 <tr>
-                    <td>123</td>
-                    <td>Pepe</td>
-                    <td>4</td>
-                    <td>Brazil vs Argentina</td>
+                    <td>Chelsea</td>
+                    <td>0</td>
                 </tr>
-
+                <tr>
+                    <td>Barcelona</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Messi</td>
+                    <td>Portugal</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Brazil</td>
+                    <td>2</td>
+                </tr>
             </tbody>
-
         </table>
     </div>
 </body>
