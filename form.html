@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome Aboard</h1>
+        <p> <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corporis dicta eos? Fugiat, assumenda,
+                iste amet optio necessitatibus harum magnam voluptate aspernatur adipisci asperiores reiciendis vitae
+                dolorum nobis, facere dolores nesciunt vel quo earum ratione dolor. Odio ex, repudiandae neque
+                doloremque fugiat optio, fuga ullam dolorem molestiae eaque excepturi velit!</i>
+        </p>
+    </div>
+    <div>
+        <form action="form.php">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Please Enter Your Name"><br><br>
+
+            <label for="destination">Select your destination</label><br>
+            <select name="destination" id="destination">
+                <option value="null">Select</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="pataya">Pataya</option>
+                <option value="zurong">Zurong</option>
+                <option value="chittagong">Chittagong</option>
+            </select><br><br>
+
+            <label for="price_range">Price Range</label><br>
+            <input type="text" id="price_range" , placeholder="Please enter your price range"><br><br>
+
+            <label for="kids">Will kids be travelling with you?</label><br>
+            <span>Yes</span> <input type="checkbox" id="kids_yes">
+            <span>No</span> <input type="checkbox" id="kids_no"><br><br>
+
+            <label for="duration">What is the duration of your intended stay?</label><br>
+            <input type="radio" id="duration_5"> 5 Days <br>
+            <input type="radio" id="duration_6"> 6 Days <br>
+            <input type="radio" id="duration_7"> 7 Days <br><br>
+
+            <label for="survey">If you have any additional needs, feel free to reach out to us below:</label><br>
+            <textarea name="survey" id="survey" cols="30" rows="10"></textarea>
+        </form>
+
+    </div>
+</body>
+
+</html>
