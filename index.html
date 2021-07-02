@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GRID</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: 3vh 70vh;
+        }
+
+        header {
+            width: 100vw;
+            height: 3vh;
+
+            background-color: black;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+            text-transform: uppercase;
+
+            position: fixed;
+            top: 0;
+
+            padding: 13px 11px;
+
+            display: grid;
+            grid-template-columns: 8vw 8vw 8vw;
+        }
+
+
+        main {
+            height: 400vh;
+            background-color: darkslategray;
+
+            display: grid;
+            grid-template-rows: 50vh 33vw auto;
+        }
+
+        .bg {
+            background-color: red;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 12vw;
+            text-transform: uppercase;
+            color: white;
+
+            /* transform: skew(0, -10deg); */
+        }
+
+        .profiles {
+            background-color: darkmagenta;
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .profile1 {
+            background-color: darkslategray;
+            background-image: url("profile1.jpg");
+            background-size: 30vw 30vw;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .profile2 {
+            background-color: darkslategray;
+            background-image: url("profile2.jpg");
+            background-size: 30vw 30vw;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .profile3 {
+            background-color: darkslategray;
+            background-image: url("profile3.jpg");
+            background-size: 30vw 30vw;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a {
+            color: black;
+            transition-property: color;
+            transition-duration: 0.15s;
+            transition-timing-function: ease-out;
+        } 
+
+        a:hover {
+            color: white;
+        }
+
+        @media screen and (max-width: 1000px) {
+            main {
+                background-color: darkred;
+            }
+
+            header {
+                grid-template-columns: 15vw 15vw 15vw;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                background-color: darkgoldenrod;
+            }
+
+            header {
+                grid-template-columns: 18vw 18vw 18vw;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact Us</span>
+    </header>
+    <main>
+        <div class="bg">Welcome</div>
+        <div class="profiles">
+            <div class="profile1"></div>
+            <div class="profile2"></div>
+            <div class="profile3"></div>
+        </div>
+        <div class="link">
+            <span><a href="#">Random Link</a></span>
+        </div>
+    </main>
 </body>
+
 </html>
