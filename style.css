@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#progress_bar {
+    background-color: rgb(206, 55, 17);
+    height: 0.5vh;
+    width: 0vw;
+
+    animation: finish_load 0.3s ease-out 0s 1;
+
+    transition: width 0.3s ease-in 0s;
+}
+
+@keyframes finish_load {
+    0% {
+        width: 0vw;
+    }
+
+    50% {
+        width: 70vw;
+    }
+
+    100% {
+        width: 100vw;
+        display: none;
+    }
+}
